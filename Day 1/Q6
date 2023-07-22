@@ -1,1 +1,57 @@
+// LINK https://classroom.codingninjas.com/app/classroom/me/20635/content/418133/offering/6002869/problem/663
 
+// QUESTION
+
+/*
+Code : Interesting Alphabets
+Print the following pattern for the given number of rows.
+Pattern for N = 5
+E
+DE
+CDE
+BCDE
+ABCDE
+
+Input format : N (Total no. of rows)
+Output format : Pattern in N lines
+Constraints
+0 <= N <= 26
+Sample Input 1:
+8
+Sample Output 1:
+H
+GH
+FGH
+EFGH
+DEFGH
+CDEFGH
+BCDEFGH
+ABCDEFGH
+
+*/
+
+// SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+   int n;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        // for(int k=0;k<n-i;k++)
+        // {
+        //     cout<<" ";
+        // }
+        char d='A';
+        d=d+(n-i);
+        for(int j=0;j<i;j++)
+        {   
+           cout<<d; 
+           d++;
+        }
+        cout<<endl;
+    }
+  
+}
