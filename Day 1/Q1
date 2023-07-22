@@ -1,0 +1,43 @@
+// LINK https://classroom.codingninjas.com/app/classroom/me/20635/content/418130/offering/6002832/problem/967
+
+// QUESTION
+
+/*
+Print the following pattern
+Pattern for N = 4
+1
+23
+345
+4567
+
+Input Format : N (Total no. of rows)
+Output Format : Pattern in N lines
+
+Sample Input 1 : 3
+
+Sample Output 1 :
+1
+23
+345
+
+*/
+
+// SOLUTION
+
+#include<iostream>
+using namespace std;
+int main(){
+
+  int n;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        for(int j=0;j<i;j++)
+        {
+            cout<<i+j;
+        }
+        cout<<endl;
+    }
+}
+
+
