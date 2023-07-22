@@ -1,0 +1,55 @@
+// LINK https://classroom.codingninjas.com/app/classroom/me/20635/content/418136/offering/6002885/problem/671
+
+// QUESTION
+
+/*
+Code : Triangle of Numbers
+Send Feedback
+Print the following pattern for the given number of rows.
+
+Input format : Integer N (Total no. of rows)
+Output format :Pattern in N lines
+Constraints :
+0 <= N <= 50
+Sample Input 1:
+5
+Sample Output 1:
+          1
+         232
+        34543
+       4567654
+      567898765
+
+*/
+
+// SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+   int n;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        for(int k=0;k<n-i;k++)
+        {
+            cout<<" ";
+        }
+        // HALF
+        for(int j=0;j<i;j++)
+        {   
+           cout<<i+j; 
+      
+        }
+        // hlf
+        for(int j=i-2;j>=0;j--)
+        {   
+           cout<<i+j; 
+         
+        }
+        cout<<endl;
+    }
+  
+}
+
