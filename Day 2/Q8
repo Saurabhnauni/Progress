@@ -1,10 +1,49 @@
-// LINK 
+// LINK https://classroom.codingninjas.com/app/classroom/me/20635/content/418141/offering/6002922/problem/516
 
 // QUESTION
 
 /*
+Number Star Pattern
+Send Feedback
+Print the following pattern for given number of rows.
+Input format :
 
+Line 1 : N (Total number of rows)
+
+Sample Input :
+   5
+Sample Output :
+1234554321
+1234**4321
+123****321
+12******21
+1********1
 
 */
 
 // SOLUTION
+#include<iostream>
+using namespace std;
+
+int main() {
+int n;
+cin>>n;
+for(int i=1;i<=n;i++)
+
+{
+    for(int j=1;j<=(n-i)+1;j++)
+    {
+        cout<<j;
+    }
+    for(int k=0;k<2*(i-1);k++)
+    {
+    cout<<"*";
+    }
+    for(int j=(n-i)+1;j>0;j--)
+    {
+        cout<<j;
+    }
+    cout<<endl;
+}
+
+}
